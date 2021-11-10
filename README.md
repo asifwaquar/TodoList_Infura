@@ -1,2 +1,2 @@
-# TodoList_Infura
+# TodoList Infura
 Ethereum Blockchain Deployment on Infura Blockchain
