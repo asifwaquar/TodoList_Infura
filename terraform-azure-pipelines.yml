@@ -31,13 +31,13 @@ stages:
           command: 'init'
           workingDirectory: '$(System.DefaultWorkingDirectory)/infrastructure'
           backendType: 'azurerm'
-          backendServiceArm: 'todolist-aks-azurerm-svc-con'
+          backendServiceArm: 'todolist_connection'
           ensureBackend: true
           backendAzureRmResourceGroupName: 'terraform-storage-rg'
           backendAzureRmResourceGroupLocation: 'southeastasia'
           backendAzureRmStorageAccountName: 'todoliststorageaccount'
           backendAzureRmContainerName: 'tfstatefiles'
-          backendAzureRmKey: 'aks-base.tfstate'
+          backendAzureRmKey: 'todolist-base.tfstate'
           allowTelemetryCollection: false
       - task: TerraformCLI@0
         displayName: Terraform Validate
