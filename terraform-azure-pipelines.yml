@@ -18,8 +18,8 @@ stages:
       - task: PublishPipelineArtifact@1
         displayName: Publish Artifacts
         inputs:
-          targetPath: '$(System.DefaultWorkingDirectory)/terraform-manifests'
-          artifact: 'terraform-manifests-out'
+          targetPath: '$(System.DefaultWorkingDirectory)/infrastructure'
+          artifact: 'infrastructure-out'
           publishLocation: 'pipeline'
       - task: TerraformInstaller@0
         displayName: Terraform Install
@@ -29,7 +29,7 @@ stages:
         displayName: Terraform Init
         inputs:
           command: 'init'
-          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/infrastructure'
           backendType: 'azurerm'
           backendServiceArm: 'todolist-aks-azurerm-svc-con'
           ensureBackend: true
@@ -43,5 +43,5 @@ stages:
         displayName: Terraform Validate
         inputs:
           command: 'validate'
-          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
-          allowTelemetryCollection: false  
+          workingDirectory: '$(System.DefaultWorkingDirectory)/infrastructure'
+          allowTelemetryCollection: false
