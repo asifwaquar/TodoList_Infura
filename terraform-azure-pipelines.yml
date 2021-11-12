@@ -31,7 +31,7 @@ stages:
           command: 'init'
           workingDirectory: '$(System.DefaultWorkingDirectory)/infrastructure'
           backendType: 'azurerm'
-          backendServiceArm: 'todolist_connection'
+          backendServiceArm: 'Visual Studio Enterprise Subscription(ed448086-8de8-4d13-9fd7-9b77d440fdae)'
           ensureBackend: true
           backendAzureRmResourceGroupName: 'terraform-storage-rg'
           backendAzureRmResourceGroupLocation: 'southeastasia'
