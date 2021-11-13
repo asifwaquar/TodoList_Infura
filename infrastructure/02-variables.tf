@@ -14,7 +14,7 @@ variable "location" {
 variable "resource_group_name" {
   type = string
   description = "This variable defines the Resource Group"
-  default = "todolist-aks"
+  default = "terraform-aks"
 }
 
 # Azure AKS Environment Name
