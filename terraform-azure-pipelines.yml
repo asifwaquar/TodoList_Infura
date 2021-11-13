@@ -88,7 +88,7 @@ stages:
                 backendAzureRmResourceGroupName: 'terraform-storage-rg'
                 backendAzureRmStorageAccountName: 'todoliststgact354'
                 backendAzureRmContainerName: 'tfstatetestfiles'
-                backendAzureRmKey: 'aks-$(DEV_ENVIRONMENT).tfstate'
+                backendAzureRmKey: 'todolist-$(DEV_ENVIRONMENT).tfstate'
                 allowTelemetryCollection: false
             - task: TerraformCLI@0
               displayName: Terraform Plan
