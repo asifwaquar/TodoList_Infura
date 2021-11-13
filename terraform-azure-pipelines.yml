@@ -35,7 +35,7 @@ stages:
           ensureBackend: true
           backendAzureRmResourceGroupName: 'terraform-storage-rg'
           backendAzureRmResourceGroupLocation: 'southeastasia'
-          backendAzureRmStorageAccountName: 'todoliststorageaccount'
+          backendAzureRmStorageAccountName: 'todoliststorageaccount354'
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'todolist-base.tfstate'
           allowTelemetryCollection: false
