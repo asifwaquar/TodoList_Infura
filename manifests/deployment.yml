@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: asifwaquartodolistinfura 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asifwaquartodolistinfura
+  template:
+    metadata:
+      labels:
+        app: asifwaquartodolistinfura 
+    spec:
+      containers:
+        - name: asifwaquartodolistinfura 
+          image: todolistacr.azurecr.io/asifwaquartodolistinfura
+          ports:
+          - containerPort: 3000
